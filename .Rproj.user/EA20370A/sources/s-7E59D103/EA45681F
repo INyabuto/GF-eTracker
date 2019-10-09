@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570613226533.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3113960221",
+    "id" : "EA45681F",
+    "lastKnownWriteTime" : 1570619209,
+    "last_content_update" : 1570619209956,
+    "path" : "~/Documents/Workspace/Global Fund/GF_Techinical-guide/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+        "cursorPosition" : "4,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "gitignore"
+}

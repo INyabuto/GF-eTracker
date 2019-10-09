@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="lib/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+
+</head>
+<body style="background-color:white;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>A description of Global Fund eTracker Metadata Types</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Metadata </th>
+   <th style="text-align:left;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Data elements </td>
+   <td style="text-align:left;"> <h3>Description</h3>Data elements forms the basis of the Global Fund eTracker. They define what is recorded in the system.GF eTracker data elements follows PSI DHIS2 standards for names and short names &amp; the GF Indicator matrix for the form names.<p>For instance: <em>GF HIV/AIDS - Estimated MSMs</em> is a data element that records the estimated number of MSMs in a region.</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Date element groups </td>
+   <td style="text-align:left;"> <h3>Description</h3>
+<p>Data element groups provides a mechanism for classifying Global Fund related data elements into a common theme.</p>For instance: <em>GF Malaria</em> groups together all GF Malaria data elements. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Data sets </td>
+   <td style="text-align:left;"> <h3>Description</h3>Data reporting in the Global Fund eTracker is organized through the use of the use of data sets.<p> A data set is a collection of data elements grouped together for data collection.</p>
+<p> For instance: <em>GF HT - HIV/AIDs</em> is used to report data from HIV/AIDs program in Haiti (HT).</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sections </td>
+   <td style="text-align:left;"> <h3>Description</h3>
+<p>Section are used to split the Global Fund eTracker data sets into small reportable chunks known as modules.</p> <p>They allow for a bit more flexibility when it comes to using the tabular forms in DHIS2 and are quick and simple to design.</p>
+<p> For instance: <em>Comprehensive prevention program for MSMs</em> is a section within the GF HT – HIV/AIDs data set that groups together indicators to form a module <em>Comprehensive prevention program</em> used in the GF HIV programs.</p> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Category combos </td>
+   <td style="text-align:left;"> <h3>Description</h3>
+<p>Category combos are used to apply Global Fund disaggregation onto the data elements and indicators.They allow multiple categories to be combined into a related set.</p>
+<p> For instance: <em>Number of TB cases with Rifampicin-resistant (RR-TB) and/or MDR-TB notified</em> is disaggregated according to the following categories; <em>Sex (Female, Male) &amp; Age (&lt;15; 15+)</em> </p>
+</td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Periods </td>
+   <td style="text-align:left;"> <h3>Description</h3>
+<p>Global Fund eTracker supports DHIS2 standard period types to report and analyze performance over time.</p>
+<p> For instance: <em>201901</em> to report on January of 2019 or <em>2019Sn1</em> to report on the first semester of year 2019. </p> </td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

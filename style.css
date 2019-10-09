@@ -1,0 +1,42 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+th {
+    background-color: rgb(225, 138, 56);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: left;
+    font-size: 16px;
+  }
+  td {
+    /*background-color: white;
+    color: rgb(0, 0, 0);*/
+    padding: 20px 30px;
+    text-align:left;
+    vertical-align: text-top;
+  }
+  
+a{
+  color:rgb(78,179,220);
+  font-family: "Arial"!important;
+}
+
+/*
+.book .book-body .page-wrapper .page-inner .normal{
+  color:rgb(0,0,0)!important;
+  background-color: white!important;
+}
+*/

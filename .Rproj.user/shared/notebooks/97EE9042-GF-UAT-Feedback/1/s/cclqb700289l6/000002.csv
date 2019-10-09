@@ -1,0 +1,5 @@
+"0","rel_dis_comments <- feedback %.% select(Nom, `If no, please share your comments`)
+"
+"2","Error in feedback %.% select(Nom, `If no, please share your comments`) : 
+  could not find function ""%.%""
+"

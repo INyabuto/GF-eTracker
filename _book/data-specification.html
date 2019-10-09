@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Data Specification | Global Fund eTracker: Technical Guide</title>
+  <meta name="description" content="Getting started with GF eTracker" />
+  <meta name="generator" content="bookdown 0.13.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Data Specification | Global Fund eTracker: Technical Guide" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="./images/gf_logo.jpg" />
+  <meta property="og:description" content="Getting started with GF eTracker" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Data Specification | Global Fund eTracker: Technical Guide" />
+  
+  <meta name="twitter:description" content="Getting started with GF eTracker" />
+  <meta name="twitter:image" content="./images/gf_logo.jpg" />
+
+<meta name="author" content="Isaiah Nyabuto, Cristina Lussiana" />
+
+
+<meta name="date" content="2019-10-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="./images/gf_logo.ico" type="image/x-icon" />
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="indicator-tracking.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Global Fund eTracker</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#purpose"><i class="fa fa-check"></i><b>1.1</b> Purpose</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#document-convention"><i class="fa fa-check"></i><b>1.2</b> Document Convention</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#intended-audience-and-reading-suggestions"><i class="fa fa-check"></i><b>1.3</b> Intended Audience and Reading Suggestions</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#project-scope"><i class="fa fa-check"></i><b>1.4</b> Project Scope</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#references"><i class="fa fa-check"></i><b>1.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Overall Description</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#global-fund-etracker-perspective"><i class="fa fa-check"></i><b>2.1</b> Global Fund eTracker Perspective</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#function-specification"><i class="fa fa-check"></i><b>2.2</b> Function specification</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-specification.html"><a href="data-specification.html"><i class="fa fa-check"></i><b>3</b> Data Specification</a><ul>
+<li class="chapter" data-level="3.1" data-path="data-specification.html"><a href="data-specification.html#metadata-types"><i class="fa fa-check"></i><b>3.1</b> Metadata Types</a></li>
+<li class="chapter" data-level="3.2" data-path="data-specification.html"><a href="data-specification.html#standards"><i class="fa fa-check"></i><b>3.2</b> Standards</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="data-specification.html"><a href="data-specification.html#psi-dhis2-standards"><i class="fa fa-check"></i><b>3.2.1</b> PSI DHIS2 Standards</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-specification.html"><a href="data-specification.html#global-fund-indicator-framework"><i class="fa fa-check"></i><b>3.2.2</b> Global Fund Indicator Framework</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="indicator-tracking.html"><a href="indicator-tracking.html"><i class="fa fa-check"></i><b>4</b> Indicator Tracking</a><ul>
+<li class="chapter" data-level="4.1" data-path="indicator-tracking.html"><a href="indicator-tracking.html#indicators"><i class="fa fa-check"></i><b>4.1</b> Indicators</a></li>
+<li class="chapter" data-level="4.2" data-path="indicator-tracking.html"><a href="indicator-tracking.html#frequency-of-reporting"><i class="fa fa-check"></i><b>4.2</b> Frequency of Reporting</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="indicator-tracking.html"><a href="indicator-tracking.html#hivtb"><i class="fa fa-check"></i><b>4.2.1</b> HIV/TB</a></li>
+<li class="chapter" data-level="4.2.2" data-path="indicator-tracking.html"><a href="indicator-tracking.html#malaria"><i class="fa fa-check"></i><b>4.2.2</b> Malaria</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Global Fund eTracker: Technical Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-specification" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Data Specification</h1>
+<div id="metadata-types" class="section level2">
+<h2><span class="header-section-number">3.1</span> Metadata Types</h2>
+<p>Metadata are helpful to organize the different types of information collected by the Global Fund Management Unit. While other metadata may be included based on a country reporting need, the Global Fund eTracker implements the following metadata types.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:nice-tab">Table 3.1: </span>A description of Global Fund eTracker Metadata Types
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metadata
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Data elements
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+Data elements forms the basis of the Global Fund eTracker. They define what is recorded in the system.GF eTracker data elements follows PSI DHIS2 standards for names and short names &amp; the GF Indicator matrix for the form names.
+<p>
+For instance: <em>GF HIV/AIDS - Estimated MSMs</em> is a data element that records the estimated number of MSMs in a region.
+</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Date element groups
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+<p>
+Data element groups provides a mechanism for classifying Global Fund related data elements into a common theme.
+</p>
+For instance: <em>GF Malaria</em> groups together all GF Malaria data elements.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Data sets
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+Data reporting in the Global Fund eTracker is organized through the use of the use of data sets.
+<p>
+A data set is a collection of data elements grouped together for data collection.
+</p>
+<p>
+For instance: <em>GF HT - HIV/AIDs</em> is used to report data from HIV/AIDs program in Haiti (HT).
+</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sections
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+<p>
+Section are used to split the Global Fund eTracker data sets into small reportable chunks known as modules.
+</p>
+<p>
+They allow for a bit more flexibility when it comes to using the tabular forms in DHIS2 and are quick and simple to design.
+</p>
+<p>
+For instance: <em>Comprehensive prevention program for MSMs</em> is a section within the GF HT – HIV/AIDs data set that groups together indicators to form a module <em>Comprehensive prevention program</em> used in the GF HIV programs.
+</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Category combos
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+<p>
+Category combos are used to apply Global Fund disaggregation onto the data elements and indicators.They allow multiple categories to be combined into a related set.
+</p>
+<p>
+For instance: <em>Number of TB cases with Rifampicin-resistant (RR-TB) and/or MDR-TB notified</em> is disaggregated according to the following categories; <em>Sex (Female, Male) &amp; Age (&lt;15; 15+)</em>
+</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Periods
+</td>
+<td style="text-align:left;">
+<h3>
+Description
+</h3>
+<p>
+Global Fund eTracker supports DHIS2 standard period types to report and analyze performance over time.
+</p>
+<p>
+For instance: <em>201901</em> to report on January of 2019 or <em>2019Sn1</em> to report on the first semester of year 2019.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="standards" class="section level2">
+<h2><span class="header-section-number">3.2</span> Standards</h2>
+<p>Global Fund eTracker leverages PSI DHIS2 standards in metadata configurations and follows the principles for digital technology as the leading standard.</p>
+<div id="psi-dhis2-standards" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> PSI DHIS2 Standards</h3>
+<p>Similar to the Health Service Report (HSR), data elements are shared and can be re-used across countries. Unlike HSR, Global Fund eTracker implements country-specific data sets and uses the default sections to display forms on the data entry screen.</p>
+</div>
+<div id="global-fund-indicator-framework" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Global Fund Indicator Framework</h3>
+<p>The Global Fund Indicator Framework guides the reporting and data requirements for the Global Fund eTracker. Countries may have their own specific data or disaggregtions requirements, therefore, the Global Fund eTracker implements country specific reporting tools</p>
+<div id="hivtb-blueprint" class="section level4">
+<h4><span class="header-section-number">3.2.2.1</span> HIV/TB Blueprint</h4>
+<div class="figure" style="text-align: center"><span id="fig:nice-fig2"></span>
+<img src="images/gfmublueprint.png" alt="Global Fund eTracker blueprint" width="80%" />
+<p class="caption">
+Figure 3.1: Global Fund eTracker blueprint
+</p>
+</div>
+</div>
+<div id="malaria-blueprint" class="section level4">
+<h4><span class="header-section-number">3.2.2.2</span> Malaria Blueprint</h4>
+<div class="figure" style="text-align: center"><span id="fig:nice-fig3"></span>
+<img src="images/gfmublueprint-mal.png" alt="Global Fund eTracker blueprint" width="80%" />
+<p class="caption">
+Figure 3.2: Global Fund eTracker blueprint
+</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="indicator-tracking.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["GF_Techinical-guide.pdf", "GF_Techinical-guide.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+# Indicator Tracking
+
+<!--Introduction-->
+
+Indicators are defined based on the GFMU reporting needs. However, countries may request for additional metrics, including country-level disaggregations based on the D2A framework. The indicators are aligned to global fund indicator matrix where modules group them and are classified by indicator codes. Each metric has a description which provides additional information on the analysis and interpretations.
+
+Generally the GFMU tracks indicators in three main categories; baseline, targets and Achievement values as discussed below.
+
+* **Baseline** - Provides the base measurement of the performance indicator before the implementation of the project
+activities. Its usually at the start of the reporting period. 
+* **Targets** - A specific, planned level of result to be achieved within an explicit timeframe. Usually at the end of the reporting period. Targets are estimated based on the the Global Fund indicator classes.
+* **Achievement** - The actual measurement achieved in the reporting period. Usually at the end of the reporting period. 
+
+Below is an illustration of the indicator set up in Global Fund eTracker.
+
+```{r, echo=FALSE,fig.cap='Global Fund eTracker Indicator Analysis', out.width='80%', fig.asp=.75, fig.align='center'}
+
+knitr::include_graphics("./images/indicators.png")
+```
+
+
+## Indicators
+
+```{r, echo=FALSE}
+library(magrittr)
+ind <- readxl::read_xlsx("./data/hiv-freq.xlsx", sheet = "Sheet3")
+
+ind[is.na(ind)] <- ""
+ind_table <- ind %>% dplyr::select(c("Module", "Code", "Name of the Indicator", "Shortname", "Indicator Class", "Description","Indicator_type","numeratorDescription","denominatorDescription"))
+
+ind_table <- ind_table %>% dplyr::select(Code,`Name of the Indicator`,Description)
+
+library(kableExtra)
+
+kable(ind_table, caption = "Indicators", escape = F) %>% kable_styling()
+```
+
+## Frequency of Reporting
+### HIV/TB
+```{r, echo=FALSE}
+
+hiv_freq <- readxl::read_xlsx("./data/hiv-freq.xlsx", sheet = "Sheet1")
+
+hiv_freq[is.na(hiv_freq)] <- ""
+
+knitr::kable(hiv_freq, caption = "HIV/TB indicators by Frequency of reporting")
+
+```
+
+### Malaria 
+```{r echo=FALSE}
+
+mal_freq <- readxl::read_xlsx("./data/hiv-freq.xlsx", sheet = "Mal")
+
+mal_freq[is.na(mal_freq)] <- ""
+
+knitr::kable(mal_freq, caption = "Malaria indicators by Frequency of reporting")
+```

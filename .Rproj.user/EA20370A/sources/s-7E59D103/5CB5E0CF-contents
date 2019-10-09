@@ -1,0 +1,53 @@
+--- 
+title: "Global Fund eTracker: Technical Guide"
+author: "Isaiah Nyabuto, Cristina Lussiana"
+date: "`r Sys.Date()`"
+output:
+description: "Getting started with GF eTracker"
+documentclass: book
+link-citations: yes
+bibliography:
+- book.bib
+- packages.bib
+site: bookdown::bookdown_site
+biblio-style: apalike
+cover-image: "./images/gf_logo.jpg"
+favicon: "./images/gf_logo.ico"
+always_allow_html: yes
+---
+# Preface {-}
+```{r echo=FALSE, fig.width=100, fig.height=50}
+knitr::include_graphics("./images/gf_logo copy.jpg")
+```
+
+# Introduction
+
+## Purpose 
+
+The goal of this job aid is to describe the overall system implementation of the Global Fund eTracker and provide guidance on further development and customization of the tool. Global Fund eTracker is a data reporting tool that provides more visibility on the GF metrics and helps to align the project's target with the current progress.
+
+## Document Convention
+
+The guide uses the following conventions;
+
+|**Abbreviation**    | **Description**                                    |
+|--------------------|:--------------------------------------------------:|
+|DHIS2               |District Health Information System                  |
+|GF                  |Global Fund                                         |
+|GBS                 |Global Business Systems                             |
+|GFMU                |Global Fund Management Unit                         |
+---------------------------------------------------------------------------
+
+## Intended Audience and Reading Suggestions
+
+This job aid is intended for DHIS2 implementers and experts, and this includes Architects and support specialists.
+
+## Project Scope
+
+Global Fund eTracker is a data reporting tool designed through a collaboration by GFMU and GBS teams to help provide more visibility on the GF metrics and in the alignment of the project target with the current progress. It supports the GFMU teams in the identification of gaps, monitoring of progress, and to compare the bi-yearly reports prepared by GF countries. The project is active in five countries, and this includes Liberia, Mali, Madagascar, South Sudan, and Haiti.
+
+## References
+- [Global Fund One Pager](https://psiorg.sharepoint.com/:w:/r/sites/us_globalfunde-tracker/_layouts/15/Doc.aspx?sourcedoc=%7B9D6D6FC8-7EC5-4D8C-8031-7EF2CF247D7E%7D&file=GF%20Tracker%20One-Pager.docx&action=default&mobileredirect=true)
+- PSI DHIS2 Standards
+- Global Fund Indicator Matrix
+
