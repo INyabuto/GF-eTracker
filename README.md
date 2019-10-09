@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/ for how to compile this example.
+The goal of this job aid is to describe the overall system implementation of the Global Fund eTracker and provide guidance on further development and customization of the tool. Global Fund eTracker is a data reporting tool that provides more visibility on the GF metrics and helps to align the project's target with the current progress.
